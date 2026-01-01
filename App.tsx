@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Assistant from './components/Assistant';
 import { NavSection } from './types';
 import { 
   IMPORTANT_DATES, 
@@ -77,8 +76,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-brand-primary selection:text-white">
       <Navbar currentSection={activeSection} onNavigate={handleNavigate} />
-      <Assistant />
-
+     
       {/* --- HERO SECTION --- */}
       <div ref={sectionRefs[NavSection.HOME]} className="relative min-h-screen flex items-center bg-[#0f0406] overflow-hidden pt-20">
         {/* Background Image & Effects */}
