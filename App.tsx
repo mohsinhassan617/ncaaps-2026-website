@@ -10,6 +10,20 @@ import {
 } from './constants';
 import { Download, Users, Phone, Instagram, Clock, Building2, CloudSnow, Landmark, FileText, ArrowRight, ChevronDown, CheckCircle2, Calendar, Sparkles, Variable, Cpu, BarChart, BookOpen, MapPin } from 'lucide-react';
 
+// Local assets (placeholders)
+const brochurePdf = './assets/Brochure_new.pdf';
+const universityImg =   './assets/university_of_jammu.png';
+const csImg = './assets/cs_it.png';
+const mathsImg = './assets/maths.png';
+const statImg = './assets/stat.png';
+const logoImg = './assets/image.png';
+const jp_singh = './assets/jp_singh.png';
+const vc_sir = './assets/vc_sir.jpeg';
+const parmil = './assets/parmil.png';
+const Romesh_kumar = './assets/Romesh_kumar.png';
+const Vibhakar_mansotra = './assets/Vibhakar_mansotra.png';
+
+
 export default function App() {
   const [activeSection, setActiveSection] = useState<NavSection>(NavSection.HOME);
   const [activeTab, setActiveTab] = useState('univ');
@@ -139,8 +153,7 @@ export default function App() {
                   View Schedule
                </button>
                <button 
-                  onClick={() => window.open("Brochure_new.pdf", "_blank")}
-
+                  onClick={() => window.open(brochurePdf, "_blank")}
                   className="px-8 py-4 border border-brand-gold/30 text-brand-gold rounded-full font-medium hover:bg-brand-gold/10 transition-all backdrop-blur-sm flex items-center gap-2"
                >
                   <Download className="w-5 h-5" />
@@ -192,11 +205,11 @@ export default function App() {
                      </div>
                      
                      {/* Logo Watermark */}
-                     <img 
-                       src="image.png" 
-                       className="absolute top-6 right-6 w-20 h-20 opacity-90 drop-shadow-xl"
-                       alt="University Logo"
-                     />
+                               <img 
+                                  src={logoImg}
+                                  className="absolute top-6 right-6 w-20 h-20 opacity-90 drop-shadow-xl"
+                                  alt="University Logo"
+                               />
                 </div>
             </div>
             
@@ -246,13 +259,13 @@ export default function App() {
            </div>
 
            <div className="relative z-10">
-              <button 
-                 onClick={() => window.open("Brochure_new.pdf", "_blank")}
-                 className="group flex items-center gap-3 px-8 py-4 bg-white text-brand-dark rounded-full font-bold shadow-xl hover:bg-brand-gold hover:text-white transition-all duration-300"
-              >
-                 <Download className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                 Download PDF
-              </button>
+                 <button 
+                    onClick={() => window.open(brochurePdf, "_blank")}
+                    className="group flex items-center gap-3 px-8 py-4 bg-white text-brand-dark rounded-full font-bold shadow-xl hover:bg-brand-gold hover:text-white transition-all duration-300"
+                 >
+                    <Download className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                    Download PDF
+                 </button>
            </div>
         </div>
       </section>
@@ -289,7 +302,7 @@ export default function App() {
                         Established in 1969, the University of Jammu is a premier institution in northern India, accredited with <strong>NAAC A++</strong> and ranked 51st in NIRF 2025 (23rd among state/public universities). It offers diverse UG, PG, and doctoral programs and is known for its strong academic culture, modern infrastructure, and emphasis on innovation, sustainability, and community engagement.
                       </p>
                    </div>
-                   <img src="university_of_jammu.png" className="rounded-2xl shadow-xl w-full h-80 object-cover" />
+                   <img src={universityImg} className="rounded-2xl shadow-xl w-full h-80 object-cover" />
                 </div>
               )}
               {activeTab === 'faculty' && (
@@ -312,7 +325,7 @@ export default function App() {
                       </p>
                    </div>
                    <div className="bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
-                     <img src="cs_it.png" className="rounded-2xl shadow-xl w-full h-80 object-cover" />
+                               <img src={csImg} className="rounded-2xl shadow-xl w-full h-80 object-cover" />
                    </div>
                 </div>
               )}
@@ -325,7 +338,7 @@ export default function App() {
                       </p>
                    </div>
                    <div className="bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
-                    <img src="maths.png" className="rounded-2xl shadow-xl w-full h-80 object-cover" />
+                    <img src={mathsImg} className="rounded-2xl shadow-xl w-full h-80 object-cover" />
                    </div>
                 </div>
               )}
@@ -338,7 +351,7 @@ export default function App() {
                       </p>
                    </div>
                    <div className="bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
-                    <img src="stat.png" className="rounded-2xl shadow-xl w-full h-80 object-cover" />
+                    <img src={statImg} className="rounded-2xl shadow-xl w-full h-80 object-cover" />
                    </div>
                 </div>
               )}

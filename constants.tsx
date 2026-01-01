@@ -44,7 +44,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Hon’ble Vice-Chancellor',
     institution: 'University of Jammu',
     role: 'Chief Patron',
-    imageUrl: 'vc_sir.jpeg'
+    imageUrl: './assets/vc_sir.jpeg'
   },
   {
     id: 'patron',
@@ -52,7 +52,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Dean, Academic Affairs',
     institution: 'University of Jammu',
     role: 'Patron',
-    imageUrl: 'jp_singh.png'
+    imageUrl: './assets/jp_singh.png'
   },
   {
     id: 'conf-chair',
@@ -60,7 +60,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Dean, Faculty of Mathematical Sciences',
     institution: 'University of Jammu',
     role: 'Conference Chair',
-    imageUrl: 'Romesh_kumar.png'
+    imageUrl: './assets/Romesh_kumar.png'
   },
   {
     id: 'gen-chair',
@@ -68,7 +68,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Head, Dept. of CS & IT',
     institution: 'University of Jammu',
     role: 'General Chair',
-    imageUrl: 'Vibhakar_mansotra.png'
+    imageUrl: './assets/Vibhakar_mansotra.png'
   },
   {
     id: 'org-chair',
@@ -76,7 +76,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Professor (Statistics)',
     institution: 'University of Jammu',
     role: 'Organising Chair',
-    imageUrl: 'Parmil.png'
+    imageUrl: './assets/parmil.png'
   },
   {
     id: 'org-co-chair',
@@ -84,7 +84,7 @@ export const RESOURCE_PERSONS: Speaker[] = [
     designation: 'Assoc. Prof.(Mathematics)',
     institution: 'University of Jammu',
     role: 'Organising Co-Chair',
-    imageUrl: 'Tirath.png'
+    imageUrl: './assets/Tirath.png'
   }
 ];
 
